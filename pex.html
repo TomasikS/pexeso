@@ -83,7 +83,20 @@
 			<DIV CLASS="playersName" ID="Player2" ONDBLCLICK="changeName(2)">Player 2</DIV>
 			<DIV CLASS="score" ID="score2">Score: 0</DIV>
 			<TABLE ID="tableP2"></TABLE>
+			
+				<p>
+    Počet navštev <span id="pocitadlo"></span> 
+</p> 
 		</DIV>
+		
+	
+
+<script>
+if (!localStorage.pageLoadCount) 
+    localStorage.pageLoadCount = 0; 
+    localStorage.pageLoadCount = parseInt(localStorage.pageLoadCount) + 1; 
+    document.getElementById('pocitadlo').textContent = localStorage.pageLoadCount; 
+</script>
 
   </body>
 </html>
