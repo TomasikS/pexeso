@@ -1,14 +1,23 @@
-<!DOCTYPE HTML >
-<html>
-  <head>
-  <meta charset="utf-8">
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD>
+		<META CHARSET="UTF-8">
+		<TITLE>PEXESO</TITLE>
+		<LINK REL="stylesheet" HREF="css/style.css">
+		<SCRIPT SRC="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></SCRIPT>
+		<SCRIPT SRC="script/script.js"></SCRIPT>
+		<LINK REL="stylesheet" HREF="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	</HEAD>
 
-  <title>Pexeso</title>
-  <LINK REL="stylesheet" HREF="css/style.css">
-  <SCRIPT SRC="script/script.js"> </SCRIPT>
+	<BODY ONLOAD="shuffle()">
+		<DIV CLASS="col-md-2" ALIGN="CENTER">
+			<DIV CLASS="playersName" ID="Player1" ONDBLCLICK="changeName(1)">Player 1</DIV>
+			<DIV CLASS="score" ID="score1">Score: 0</DIV>
+			<DIV>
+				<TABLE ID="tableP1"></TABLE>
+			</DIV>
+		</DIV>
   
-  </head>
-  <body>
   
   <DIV ID="gameplain">
           <TABLE width="520" border="1">
@@ -17,57 +26,64 @@
           
                   <TR> 
           
-          <TD>   <img src="img/logo.jpg"  CLASS="card" ID="img00" onclick="clickimg(00)" > </TD>  
+          <TD>   <img src="img/logo.jpg"  CLASS="card" ID="img00" onclick="clickImg(00)" > </TD>  
           
-             <TD>   <img src="img/logo.jpg"  CLASS="card" ID="img01" onclick="clickimg(01)" > </TD>    
+             <TD>   <img src="img/logo.jpg"  CLASS="card" ID="img01" onclick="clickImg(01)" > </TD>    
              
-               <TD>   <img src="img/logo.jpg"  CLASS="card" ID="img02" onclick="clickimg(02)" > </TD>    
+               <TD>   <img src="img/logo.jpg"  CLASS="card" ID="img02" onclick="clickImg(02)" > </TD>    
                
-                <TD>       <img src="img/logo.jpg"  CLASS="card" ID="img03" onclick="clickimg(03)" > </TD>      
+                <TD>       <img src="img/logo.jpg"  CLASS="card" ID="img03" onclick="clickImg(03)" > </TD>      
                 
                  </TR>
           
           <TR> 
           
-          <TD>   <img src="img/logo.jpg" CLASS="card" ID="img10" onclick="clickimg(10)" > </TD>  
+          <TD>   <img src="img/logo.jpg" CLASS="card" ID="img10" onclick="clickImg(10)" > </TD>  
           
-             <TD>   <img src="img/logo.jpg" CLASS="card" ID="img11" onclick="clickimg(11)" > </TD>   
+             <TD>   <img src="img/logo.jpg" CLASS="card" ID="img11" onclick="clickImg(11)" > </TD>   
              
-               <TD>   <img src="img/logo.jpg"  CLASS="card" ID="12" onclick="clickimg(12)" > </TD>    
+               <TD>   <img src="img/logo.jpg"  CLASS="card" ID="img12" onclick="clickImg(12)" > </TD>    
                
-                <TD>       <img src="img/logo.jpg"  CLASS="card" ID="img13" onclick="clickimg(13)" > </TD>      
+                <TD>       <img src="img/logo.jpg"  CLASS="card" ID="img13" onclick="clickImg(13)" > </TD>      
                 
                  </TR>
                 
                 
                       <TR> 
           
-          <TD>   <img src="img/logo.jpg"  CLASS="card" ID="img20" onclick="clickimg(20)" > </TD>  
+          <TD>   <img src="img/logo.jpg"  CLASS="card" ID="img20" onclick="clickImg(20)" > </TD>  
           
-             <TD>   <img src="img/logo.jpg"  CLASS="card" ID="img21" onclick="clickimg(21)" > </TD>    
+             <TD>   <img src="img/logo.jpg"  CLASS="card" ID="img21" onclick="clickImg(21)" > </TD>    
              
-               <TD>   <img src="img/logo.jpg"  CLASS="card" ID="img22" onclick="clickimg(22)" > </TD>    
+               <TD>   <img src="img/logo.jpg"  CLASS="card" ID="img22" onclick="clickImg(22)" > </TD>    
                
-                <TD>       <img src="img/logo.jpg"  CLASS="card" ID="img23" onclick="clickimg(23)" > </TD>      
+                <TD>       <img src="img/logo.jpg"  CLASS="card" ID="img23" onclick="clickImg(23)" > </TD>      
                 
                  </TR>
                  
                     <TR> 
           
-          <TD>   <img src="img/logo.jpg"  CLASS="card" ID="img30" onclick="clickimg(30)" > </TD>  
+          <TD>   <img src="img/logo.jpg"  CLASS="card" ID="img30" onclick="clickImg(30)" > </TD>  
           
-             <TD>   <img src="img/logo.jpg" CLASS="card" ID="img31" onclick="clickimg(31)" > </TD>    
+             <TD>   <img src="img/logo.jpg" CLASS="card" ID="img31" onclick="clickImg(31)" > </TD>    
              
-               <TD>   <img src="img/logo.jpg"  CLASS="card" ID="img32" onclick="clickimg(32)" > </TD>    
+               <TD>   <img src="img/logo.jpg"  CLASS="card" ID="img32" onclick="clickImg(32)" > </TD>    
                
-                <TD>       <img src="img/logo.jpg"  CLASS="card" ID="img33" onclick="clickimg(33)" > </TD>      
+                <TD>       <img src="img/logo.jpg"  CLASS="card" ID="img33" onclick="clickImg(33)" > </TD>      
                 
                  </TR>
      
           </TABLE>
-  </DIV>
+		  
+		  
+		  
+		
   
-  
-  
+<DIV CLASS="col-md-2" ALIGN="CENTER">
+			<DIV CLASS="playersName" ID="Player2" ONDBLCLICK="changeName(2)">Player 2</DIV>
+			<DIV CLASS="score" ID="score2">Score: 0</DIV>
+			<TABLE ID="tableP2"></TABLE>
+		</DIV>
+
   </body>
 </html>
